@@ -21,9 +21,9 @@ jobs:
 
       # publishes Blazor project to the release folder
       - name: Publish .NET Project
-        run: dotnet publish BlazorGitHubPagesDemo.csproj -c Release -o release --nologo
+        run: dotnet publish TiC_Online_WASM3.csproj -c Release -o release --nologo
 
-      # changes the base-tag in index.html from '/' to 'BlazorGitHubPagesDemo' to match GitHub Pages repository subdirectory
+      # changes the base-tag in index.html from '/' to 'thriveinchaosband' to match GitHub Pages repository subdirectory
       - name: Change base-tag in index.html from / to thriveinchaosband
         run: sed -i 's/<base href="\/" \/>/<base href="\/thriveinchaosband\/" \/>/g' release/wwwroot/index.html
 
