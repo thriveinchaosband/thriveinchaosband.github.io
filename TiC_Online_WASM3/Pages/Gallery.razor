@@ -1,0 +1,55 @@
+﻿@page "/gallery"
+@inject HttpClient Http
+
+<PageTitle>Gallery</PageTitle>
+
+<div class="gallery-page">
+    <img src="images/LogoJellyfish.png" alt="" class="gallery-backdrop" aria-hidden="true" />
+
+    <div class="gallery-content">
+        <h1>Gallery</h1>
+
+        @if (_loading)
+        {
+            <p>Loading...</p>
+        }
+        else if (_photos.Count == 0)
+        {
+            <p>No photos found in images/gallery.</p>
+        }
+        else
+        {
+            <div class="gallery-grid">
+                @foreach (var url in _photos)
+                {
+                    <a class="gallery-item" href="@url" target="_blank" rel="noopener noreferrer">
+                        <img src="@url" alt="Gallery photo" loading="lazy" />
+                    </a>
+                }
+            </div>
+        }
+    </div>
+</div>
+
+@code {
+    private List<string> _photos = new();
+    private bool _loading = true;
+
+    protected override async Task OnInitializedAsync()
+    {
+        try
+        {
+            // loads the static manifest from wwwroot
+            var result = await Http.GetFromJsonAsync<string[]>("images/gallery/gallery.json");
+            _photos = result?.ToList() ?? new();
+        }
+        catch
+        {
+            _photos = new();
+        }
+        finally
+        {
+            _loading = false;
+        }
+    }
+}
