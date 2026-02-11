@@ -213,9 +213,9 @@ h1:focus {
 	font-size: 80px;
 }
 
-.social-btn:hover {
-	background: rgba(255,255,255,0.15);
-}
+	.social-btn:hover {
+		background: rgba(255,255,255,0.15);
+	}
 
 @media (max-width: 1025px) {
 	.home-socials {
@@ -226,6 +226,7 @@ h1:focus {
 		align-items: center;
 		justify-content: center;
 	}
+
 	.social-btn {
 		width: 60px;
 		height: 60px;
@@ -282,12 +283,17 @@ h1:focus {
 .lineup-intro-text h1 {
 	margin: 0 0 0.75rem 0;
 	font-size: 3rem;
+	padding: 0rem 1rem;
 }
 
 .lineup-intro-text p {
 	margin: 0;
 	font-size: 1.2rem;
 	line-height: 1.6;
+	text-align: justify;
+	text-justify: inter-word;
+	hyphens: auto;
+	padding: 0rem 1rem;
 }
 
 @media (max-width: 900px) {
@@ -322,6 +328,7 @@ h1:focus {
 	font-size: 0.8rem;
 	opacity: 0.7;
 	color: white;
+	padding: 0rem 1rem;
 }
 
 .gigs-hero {
@@ -443,12 +450,12 @@ h1:focus {
 	display: block;
 }
 
-	.gallery-item img {
-		width: 100%;
-		aspect-ratio: 4 / 3;
-		object-fit: cover;
-		display: block;
-	}
+.gallery-item img {
+	width: 100%;
+	aspect-ratio: 4 / 3;
+	object-fit: cover;
+	display: block;
+}
 
 .contact-hero {
 	position: relative;
@@ -555,6 +562,12 @@ h1:focus {
 	margin: 0 auto;
 }
 
+.music-content p {
+	text-align: justify;
+	text-justify: inter-word;
+	hyphens: auto;
+}
+
 .music-intro {
 	font-size: 1.15rem;
 	line-height: 1.7;
@@ -573,7 +586,6 @@ h1:focus {
 	gap: 1.5rem;
 	align-items: center;
 	max-width: 800px;
-
 	padding: 1.5rem;
 	border-radius: 14px;
 	background: rgba(18, 18, 18, 0.85);
@@ -594,6 +606,7 @@ h1:focus {
 .latest-release-info p {
 	margin: 0 0 1rem 0;
 	line-height: 1.5;
+	text-align: center;
 }
 
 .stream-buttons {
@@ -774,6 +787,7 @@ h1:focus {
 		padding-bottom: 110px;
 	}
 }
+
 @media (max-width: 900px) {
 	.mobile-latest-release {
 		position: relative;
@@ -811,11 +825,12 @@ h1:focus {
 		margin: 1.25rem auto 0.5rem auto;
 	}
 }
+
 @media (max-width: 900px) {
 	.home-hero {
 		min-height: auto !important;
 		height: auto !important;
-		padding-bottom: 0 !important; 
+		padding-bottom: 0 !important;
 	}
 
 	.home-socials {
@@ -823,4 +838,3 @@ h1:focus {
 		padding-bottom: 0 !important;
 	}
 }
-
