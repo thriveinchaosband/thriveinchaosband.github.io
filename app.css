@@ -784,7 +784,7 @@ h1:focus {
 			content: "";
 			position: absolute;
 			inset: 0;
-			background: url("/images/LogoJellyfish.png") center / contain no-repeat;
+			background: url("/Images/LogoJellyfish.png") center / contain no-repeat;
 			opacity: 0.08;
 			pointer-events: none;
 			z-index: 0;
