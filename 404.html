@@ -1,0 +1,13 @@
+﻿<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <script>
+      // Redirect unknown routes to / and preserve the path for the SPA router
+      var path = location.pathname + location.search + location.hash;
+      location.replace('/?p=' + encodeURIComponent(path));
+    </script>
+</head>
+<body>
+</body>
+</html>
