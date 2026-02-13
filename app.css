@@ -278,6 +278,8 @@ h1:focus {
 	max-width: 90vw;
 	height: auto;
 	border-radius: 15px;
+	aspect-ratio: 3 / 4;
+	object-fit: cover;
 }
 
 .lineup-intro-text h1 {
@@ -293,7 +295,7 @@ h1:focus {
 	text-align: justify;
 	text-justify: inter-word;
 	hyphens: auto;
-	padding: 0rem 1rem;
+	padding-right: 1rem;
 }
 
 @media (max-width: 900px) {
@@ -328,7 +330,7 @@ h1:focus {
 	font-size: 0.8rem;
 	opacity: 0.7;
 	color: white;
-	padding: 0rem 1rem;
+	padding-right: 1rem;
 }
 
 .gigs-hero {
