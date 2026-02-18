@@ -3,9 +3,14 @@
 <head>
     <meta charset="utf-8" />
     <script>
-      // Redirect unknown routes to / and preserve the path for the SPA router
-      var path = location.pathname + location.search + location.hash;
-      location.replace('/?p=' + encodeURIComponent(path));
+        // spa-github-pages redirect
+        var l = window.location;
+        l.replace(
+            l.protocol + '//' + l.host + l.pathname.split('/')[0] +
+            '/?/' + l.pathname.slice(1).replace(/&/g, '~and~') +
+            (l.search ? '&' + l.search.slice(1).replace(/&/g, '~and~') : '') +
+            l.hash
+        );
     </script>
 </head>
 <body>
