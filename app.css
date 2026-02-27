@@ -261,7 +261,9 @@ h1:focus {
 	position: relative;
 	z-index: 1;
 	padding: 3rem 2rem;
+	Max-width: 1200px;
 	color: white;
+	margin: 0 auto;
 }
 
 .lineup-intro {
@@ -356,7 +358,7 @@ h1:focus {
 	z-index: 1;
 	color: white;
 	padding: 2rem;
-	max-width: 800px;
+	max-width: 1200px;
 	margin: 0 auto;
 }
 
@@ -500,7 +502,7 @@ h1:focus {
 	z-index: 1;
 	color: white;
 	padding: 2rem;
-	max-width: 900px;
+	max-width: 1200px;
 	margin: 0 auto;
 }
 
@@ -570,7 +572,7 @@ h1:focus {
 	z-index: 1;
 	color: white;
 	padding: 2rem;
-	max-width: 900px;
+	max-width: 1200px;
 	margin: 0 auto;
 }
 
