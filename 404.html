@@ -3,14 +3,36 @@
 <head>
     <meta charset="utf-8" />
     <script>
-        // spa-github-pages redirect
-        var l = window.location;
-        l.replace(
-            l.protocol + '//' + l.host + l.pathname.split('/')[0] +
-            '/?/' + l.pathname.slice(1).replace(/&/g, '~and~') +
-            (l.search ? '&' + l.search.slice(1).replace(/&/g, '~and~') : '') +
-            l.hash
-        );
+        (function () {
+            var l = window.location;
+            var path = l.pathname || "/";
+
+            // DO NOT redirect for static assets or framework files
+            // - has a dot extension (e.g. .js .css .png .json .wasm .map)
+            // - or is under known static folders
+            var isStatic =
+                path.includes('.') ||
+                path.startsWith('/_framework/') ||
+                path.startsWith('/css/') ||
+                path.startsWith('/js/') ||
+                path.startsWith('/images/') ||
+                path.startsWith('/lib/') ||
+                path === '/favicon.png' ||
+                path === '/sitemap.xml' ||
+                path === '/robots.txt';
+
+            if (isStatic) {
+
+                return;
+            }
+
+            l.replace(
+                l.protocol + '//' + l.host + '/?/' +
+                path.slice(1).replace(/&/g, '~and~') +
+                (l.search ? '&' + l.search.slice(1).replace(/&/g, '~and~') : '') +
+                l.hash
+            );
+        })();
     </script>
 </head>
 <body>
