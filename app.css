@@ -152,6 +152,11 @@ h1:focus {
 	display: none;
 }
 
+.visually-hidden {
+	position: absolute;
+	left: -9999px;
+}
+
 @media (max-width: 1025px) {
 
 	.home-hero {
