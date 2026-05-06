@@ -948,10 +948,10 @@ h1:focus {
 	margin: 0 auto;
 }
 
-	.technical-content h1 {
-		margin-bottom: 2rem;
-		line-height: 1;
-	}
+.technical-content h1 {
+	margin-bottom: 2rem;
+	line-height: 1;
+}
 
 .technical-intro {
 	line-height: 1.7;
@@ -965,29 +965,30 @@ h1:focus {
 
 .technical-content h2 {
 	margin-top: 2.5rem;
-	margin-left: 2rem;
+	margin-left: 1rem;
 }
 
 .technical-content p {
-	margin-left: 2rem;
+	margin-left: 1rem;
 }
 
 .technical-content h3 {
 	margin-top: 2rem;
 	margin-bottom: 0.75rem;
 	font-size: 1.35rem;
-	margin-left: 4rem;
+	margin-left: 2rem;
 }
 
 .technical-content ul {
 	margin-top: 1rem;
-	margin-left: 4rem;
+	margin-left: 2rem;
 	padding-left: 1.2rem;
 	line-height: 1.8;
 }
 
 .technical-content li {
 	margin-bottom: 0.35rem;
+	margin-left: 1rem;
 }
 
 @media (max-width: 700px) {
@@ -998,8 +999,18 @@ h1:focus {
 
 .technical-table-wrapper {
 	max-width: 750px;
-	overflow: hidden;
+	overflow-x: auto;
+	overflow-y: hidden;
+	margin-left: 1rem;
+	-webkit-overflow-scrolling: touch;
 	box-shadow: 0 0 0 1px rgba(255,255,255,0.03), 0 10px 30px rgba(0,0,0,0.45);
+}
+
+.technical-table-wrapper table {
+	min-width: 700px;
+	width: 100%;
+	border-collapse: collapse;
+	margin-left: 0;
 }
 
 table {
@@ -1046,13 +1057,20 @@ tbody tr:hover {
 }
 
 .check {
-	color: #4ade80;
+	color: #32A0FF;
 	font-weight: 700;
 	font-size: 15px;
 }
 
+.technical-image-wrapper {
+	width: 100%;
+	overflow-x: auto;
+	margin-left: 0.5rem;
+	-webkit-overflow-scrolling: touch;
+}
+
 .technical-image {
 	min-width: 900px;
-	max-width: 90vw;
+	max-width: none;
 	height: auto;
 }
