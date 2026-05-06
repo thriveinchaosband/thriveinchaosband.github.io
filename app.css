@@ -518,6 +518,10 @@ h1:focus {
 	margin-bottom: 2rem;
 }
 
+.contact-block p:last-child {
+	margin-top:3rem;
+}
+
 .contact-link {
 	color: white;
 	text-decoration: underline;
@@ -910,4 +914,145 @@ h1:focus {
 			color: rgba(255, 255, 255, 0.7);
 			text-shadow: 0 0 4px rgba(0,0,0,0.9);
 		}
+}
+
+.technical-link {
+	color: white;
+	text-decoration: underline;
+}
+
+.technical-backdrop {
+	position: fixed;
+	inset: 0;
+	margin: auto;
+	max-width: min(900px, 90vw);
+	max-height: min(900px, 90vh);
+	opacity: 0.05;
+	pointer-events: none;
+	user-select: none;
+}
+
+.technical-page {
+	position: relative;
+	min-height: calc(100vh - 80px);
+	background: black;
+	overflow-x: hidden;
+}
+
+.technical-content {
+	position: relative;
+	z-index: 1;
+	color: white;
+	padding: 2rem;
+	max-width: 1200px;
+	margin: 0 auto;
+}
+
+	.technical-content h1 {
+		margin-bottom: 2rem;
+		line-height: 1;
+	}
+
+.technical-intro {
+	line-height: 1.7;
+	margin-top: 1rem;
+	max-width: 800px;
+}
+
+.technical-content h1 {
+	margin-bottom: 0.75rem;
+}
+
+.technical-content h2 {
+	margin-top: 2.5rem;
+	margin-left: 2rem;
+}
+
+.technical-content p {
+	margin-left: 2rem;
+}
+
+.technical-content h3 {
+	margin-top: 2rem;
+	margin-bottom: 0.75rem;
+	font-size: 1.35rem;
+	margin-left: 4rem;
+}
+
+.technical-content ul {
+	margin-top: 1rem;
+	margin-left: 4rem;
+	padding-left: 1.2rem;
+	line-height: 1.8;
+}
+
+.technical-content li {
+	margin-bottom: 0.35rem;
+}
+
+@media (max-width: 700px) {
+	.technical-content {
+		padding: 1.5rem;
+	}
+}
+
+.technical-table-wrapper {
+	max-width: 750px;
+	overflow: hidden;
+	box-shadow: 0 0 0 1px rgba(255,255,255,0.03), 0 10px 30px rgba(0,0,0,0.45);
+}
+
+table {
+	width: 100%;
+	border-collapse: collapse;
+	margin-left: 2rem;
+}
+
+thead {
+	background: linear-gradient(180deg, #121212 0%, #0d0d0c 100%);
+}
+
+th {
+	padding: 16px 20px;
+	text-align: center;
+	font-size: 14px;
+	font-weight: 600;
+	letter-spacing: 0.4px;
+	color: #f3f4f6;
+	border-bottom: 1px solid #343c4d;
+}
+
+td {
+	padding: 16px 20px;
+	text-align: center;
+	border-bottom: 1px solid #252b36;
+	color: #d6d9df;
+	font-size: 14px;
+}
+
+	th:first-child,
+	td:first-child {
+		text-align: left;
+		color: #ffffff;
+	}
+/*
+tbody tr:nth-child(even) {
+	background: #282828;
+}*/
+
+tbody tr:hover {
+	background: #232a36;
+	transition: background 0.2s ease;
+}
+
+.check {
+	color: #4ade80;
+	font-weight: 700;
+	font-size: 15px;
+}
+
+.technical-image {
+	min-width: 900px;
+	max-width: 90vw;
+	height: auto;
 }
