@@ -1007,7 +1007,7 @@ h1:focus {
 }
 
 .technical-table-wrapper table {
-	min-width: 700px;
+	min-width: 600px;
 	width: 100%;
 	border-collapse: collapse;
 	margin-left: 0;
