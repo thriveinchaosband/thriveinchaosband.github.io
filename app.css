@@ -127,6 +127,35 @@ h1:focus {
 		}
 }
 
+.lang-toggle {
+	background: none;
+	border: none;
+	padding: 0;
+	cursor: pointer;
+	display: flex;
+	align-items: center;
+}
+
+.flag-icon {
+	width: 20px;
+	height: 20px;
+	object-fit: cover;
+	border-radius: 2px;
+	display: block;
+	transition: opacity 0.2s ease, transform 0.2s ease;
+}
+
+	.flag-icon:hover {
+		opacity: 0.8;
+		transform: scale(1.1);
+	}
+
+.lang-label {
+	color: white;
+	font-size: 0.85rem;
+	margin-left: 6px;
+	font-family: inherit;
+}
 .home-hero {
 	display: flex;
 	flex-direction: column;
@@ -614,11 +643,11 @@ h1:focus {
 	margin: 0 auto;
 }
 
-	.music-content p {
-		text-align: justify;
-		text-justify: inter-word;
-		hyphens: auto;
-	}
+.music-content p {
+	text-align: justify;
+	text-justify: inter-word;
+	hyphens: auto;
+}
 
 .music-intro {
 	font-size: 1.15rem;
