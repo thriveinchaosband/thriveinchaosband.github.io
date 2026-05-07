@@ -93,5 +93,13 @@
   "TechTableDrummer": "Drummer",
   "TechStageplan": "Stageplan",
   "TechStageplanIntro": "We are flexible in terms of stage setup depending on the venue. If possible, please provide mounting options for our banner (300cm x 200cm). We require a minimum of 6 free power outlets (Type E / Type F) on stage for the band to use. Ideally 3 at the rear of the stage, and 3 at the front of the stage (mainly near the guitar and bass players). In general, we try to achieve the following ideal stage plan:",
-  "TechStageplanAlt": "Stage Plan"
+  "TechStageplanAlt": "Stage Plan",
+  "TechPAIntro1": "The PA, provided by the organizer, needs to be of sufficient quality/power for the venue. We are however flexible and can provide some of our own gear (as outlined below) in case the venue does not have access to certain materials, if communicated in advance.",
+  "TechPAIntro2": "In an ideal situation, the venue PA system includes:",
+  "TechPAMiking1": "Our preferred method of connecting to the PA is through miking the instruments/amplifiers.",
+  "TechPAMiking2": "The bass amplifier and one of the guitar amplifiers (Lead) have speaker-simulated DI outputs available if there are not enough microphones present.",
+  "TechPAMiking3": "If needed, the band can provide the following equipment, if communicated in advance:",
+  "TechStageplanIntro1": "We are flexible in terms of stage setup depending on the venue. If possible, please provide mounting options for our banner (300cm x 200cm).",
+  "TechStageplanIntro2": "We require a minimum of 6 free power outlets (Type E / Type F) on stage for the band to use. Ideally 3 at the rear of the stage, and 3 at the front of the stage (mainly near the guitar and bass players).",
+  "TechStageplanIntro3": "In general, we try to achieve the following ideal stage plan:"
 }

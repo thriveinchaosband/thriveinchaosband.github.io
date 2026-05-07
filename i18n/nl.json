@@ -93,5 +93,13 @@
   "TechTableDrummer": "Drummer",
   "TechStageplan": "Podiumplan",
   "TechStageplanIntro": "We zijn flexibel wat betreft de podiumopstelling afhankelijk van de zaal. Indien mogelijk, graag bevestigingsmogelijkheden voor onze banner voorzien (300cm x 200cm). We hebben minimaal 6 vrije stopcontacten (Type E / Type F) nodig op het podium. Bij voorkeur 3 aan de achterkant en 3 aan de voorkant van het podium (voornamelijk bij de gitaar- en basisten). In het algemeen streven we naar het volgende ideale podiumplan:",
-  "TechStageplanAlt": "Podiumplan"
+  "TechStageplanAlt": "Podiumplan",
+  "TechPAIntro1": "Het PA-systeem, geleverd door de organisator, moet van voldoende kwaliteit en vermogen zijn voor de zaal. We zijn echter flexibel en kunnen indien nodig een deel van onze eigen apparatuur voorzien (zoals hieronder beschreven), mits dit vooraf gecommuniceerd wordt.",
+  "TechPAIntro2": "In een ideale situatie beschikt het PA-systeem van de zaal over het volgende:",
+  "TechPAMiking1": "Bij voorkeur sluiten we onze instrumenten op het PA-systeem is via microfoons op de instrumenten/versterkers.",
+  "TechPAMiking2": "De basversterker en één van de gitaarversterkers (Lead) beschikken over speaker-gesimuleerde DI-uitgangen indien er niet genoeg microfoons beschikbaar zijn.",
+  "TechPAMiking3": "Indien nodig kan de band de volgende apparatuur voorzien, mits vooraf gecommuniceerd:",
+  "TechStageplanIntro1": "We zijn flexibel wat betreft de podiumopstelling afhankelijk van de zaal.  Indien mogelijk, graag bevestigingsmogelijkheden voor onze banner voorzien (300cm x 200cm).",
+  "TechStageplanIntro2": "We hebben minimaal 6 vrije stopcontacten (Type E / Type F) nodig op het podium. Bij voorkeur 3 aan de achterkant en 3 aan de voorkant van het podium (voornamelijk bij de gitaar- en basisten).",
+  "TechStageplanIntro3": "In het algemeen streven we naar het volgende ideale podiumplan:"
 }
