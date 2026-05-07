@@ -571,6 +571,12 @@ h1:focus {
 	display: block;
 }
 
+#vibe-logo {
+	width: 2.1rem;
+	height: 2.1rem;
+	object-fit: contain;
+	display: block;
+}
 
 .music-hero {
 	position: relative;
