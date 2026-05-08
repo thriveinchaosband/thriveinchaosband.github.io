@@ -15,7 +15,7 @@
     });
 
     // Close when clicking a nav link inside the menu
-    nav.querySelectorAll(".nav-link, .navbar-brand").forEach((link) => {
+    nav.querySelectorAll(".nav-link, .navbar-brand, .lang-toggle").forEach((link) => {
         link.addEventListener("click", () => {
             if (collapseEl.classList.contains("show")) {
                 collapse.hide();

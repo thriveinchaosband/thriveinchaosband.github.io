@@ -127,7 +127,7 @@ h1:focus {
 		}
 }
 
-.lang-toggle {
+.tic-navbar .lang-toggle {
 	background: none;
 	border: none;
 	padding: 0;
@@ -136,7 +136,7 @@ h1:focus {
 	align-items: center;
 }
 
-.flag-icon {
+.tic-navbar .flag-icon {
 	width: 20px;
 	height: 20px;
 	object-fit: cover;
@@ -145,12 +145,12 @@ h1:focus {
 	transition: opacity 0.2s ease, transform 0.2s ease;
 }
 
-	.flag-icon:hover {
+	.tic-navbar .flag-icon:hover {
 		opacity: 0.8;
 		transform: scale(1.1);
 	}
 
-.lang-label {
+.tic-navbar .lang-label {
 	color: white;
 	font-size: 0.85rem;
 	margin-left: 6px;
