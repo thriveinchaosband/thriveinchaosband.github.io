@@ -864,6 +864,7 @@ h1:focus {
 
 @media (max-width: 900px) {
 	.music-genres {
+		grid-template-columns: repeat(2, 1fr);
 		justify-content: center;
 	}
 }
