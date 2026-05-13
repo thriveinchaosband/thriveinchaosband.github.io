@@ -449,7 +449,7 @@ h1:focus {
 		content: '';
 		flex: 1;
 		height: 1px;
-		background: linear-gradient(to right, #333, transparent);
+		background: linear-gradient(to left, #333, transparent);
 	}
 
 	.lineup-intro {
@@ -890,7 +890,7 @@ h1:focus {
 		left: 0;
 		right: 0;
 		height: 1px;
-		background: linear-gradient(to right, transparent, rgba(255,255,255,0.12), transparent);
+		background: linear-gradient(to left, transparent, rgba(255,255,255,0.12), transparent);
 	}
 
 .latest-release-cover {
@@ -966,7 +966,7 @@ h1:focus {
 		content: '';
 		flex: 1;
 		height: 1px;
-		background: linear-gradient(to right, #333, transparent);
+		background: linear-gradient(to left, #333, transparent);
 	}
 
 	.latest-release {
@@ -1164,7 +1164,7 @@ h1:focus {
 				content: '';
 				flex: 1;
 				height: 1px;
-				background: linear-gradient(to right, #333, transparent);
+				background: linear-gradient(to left, #333, transparent);
 			}
 
 			.mobile-latest-release h2::after {
