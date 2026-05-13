@@ -835,9 +835,10 @@ h1:focus {
 }
 
 .music-genres {
-	display: flex;
-	flex-wrap: wrap;
+	display: grid;
+	grid-template-columns: repeat(4, max-content);
 	gap: 0.5rem;
+	justify-content: start;
 }
 
 .genre-tag {
@@ -852,6 +853,7 @@ h1:focus {
 	background: rgba(255, 255, 255, 0.03);
 	transition: border-color 0.2s, color 0.2s, background 0.2s;
 	cursor: default;
+	text-align: center;
 }
 
 	.genre-tag:hover {
