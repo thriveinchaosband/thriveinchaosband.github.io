@@ -387,7 +387,7 @@ h1:focus {
 		font-weight: 800;
 		letter-spacing: -0.03em;
 		line-height: 1.05;
-		margin: 0 0 1.25rem;
+		margin: 0 0 2rem;
 		color: #ffffff;
 	}
 
@@ -397,7 +397,7 @@ h1:focus {
 		letter-spacing: 0.18em;
 		text-transform: uppercase;
 		color: #888;
-		margin: 2.75rem 0 1rem;
+		margin: 0rem 0 1rem;
 		display: flex;
 		align-items: center;
 		gap: 0.75rem;
@@ -457,7 +457,7 @@ h1:focus {
 		justify-items: center;
 	}
 
-	.lineup-intlro-image {
+	.lineup-intro-image {
 		width: min(500px, 90vw);
 		max-width: 100%;
 		justify-self: center;
@@ -468,6 +468,7 @@ h1:focus {
 		max-width: min(500px, 90vw);
 		text-align: left;
 		justify-self: center;
+		margin-bottom: 2rem;
 	}
 }
 
