@@ -866,6 +866,7 @@ h1:focus {
 	.music-genres {
 		grid-template-columns: repeat(2, 1fr);
 		justify-content: center;
+		width: 100%;
 	}
 }
 
