@@ -29,7 +29,7 @@
   "HomeLatestRelease": "Latest Release",
   "HomeCoverAlt": "Latest release cover",
   "HomeStreamNow": "Stream now",
-  "HomeListen":  "Latest release",
+  "HomeListen": "Latest release",
   "LineUpPageTitle": "Line-Up",
   "LineUpHeading": "Line-Up",
   "LineUpPhotoCredit": "Photo © SkygeJager",
@@ -106,5 +106,6 @@
   "TechPAMiking3": "If needed, the band can provide the following equipment, if communicated in advance:",
   "TechStageplanIntro1": "We are flexible in terms of stage setup depending on the venue. If possible, please provide mounting options for our banner (300cm x 200cm).",
   "TechStageplanIntro2": "We require a minimum of 6 free power outlets (Type E / Type F) on stage for the band to use. Ideally 3 at the rear of the stage, and 3 at the front of the stage (mainly near the guitar and bass players).",
-  "TechStageplanIntro3": "In general, we try to achieve the following ideal stage plan:"
+  "TechStageplanIntro3": "In general, we try to achieve the following ideal stage plan:",
+  "TechDownloadRider": "Download"
 }
