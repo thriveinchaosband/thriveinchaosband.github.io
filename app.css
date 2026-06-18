@@ -134,15 +134,22 @@ h1:focus {
     height: var(--tic-navbar-h);
 }
 
+@keyframes logo-pop {
+    0%   { transform: scale(1);    filter: brightness(1)    drop-shadow(0 0 0px  rgba(255,255,255,0)); }
+    60%  { transform: scale(1.12); filter: brightness(1.4)  drop-shadow(0 0 12px rgba(255,255,255,0.55)); }
+    100% { transform: scale(1.08); filter: brightness(1.25) drop-shadow(0 0 6px  rgba(255,255,255,0.35)); }
+}
+
 .tic-navbar .tic-logo {
     height: 50px;
     width: auto;
     display: block;
-    transition: opacity 0.2s;
+    transition: transform 0.25s ease, filter 0.25s ease;
 }
 
-.tic-navbar .tic-logo:hover {
-    opacity: 0.8;
+.tic-navbar .navbar-brand:hover .tic-logo,
+.tic-navbar .navbar-brand:focus .tic-logo {
+    animation: logo-pop 0.3s ease-out 1 forwards;
 }
 
 .tic-navbar .tic-link {
@@ -865,23 +872,6 @@ h1:focus {
         flex: 1;
         height: 1px;
         background: linear-gradient(to left, var(--tic-border-bright), transparent);
-    }
-
-    .gig-item {
-        grid-template-columns: 1fr;
-        gap: 0.2rem;
-        text-align: center;
-        border-left: none;
-        border-top: 3px solid var(--tic-accent);
-        align-items: center;
-    }
-
-    .gigs-list-past .gig-item {
-        border-top-color: rgba(255, 255, 255, 0.1);
-    }
-
-    .gigs-empty {
-        text-align: center;
     }
 }
 
@@ -1628,6 +1618,26 @@ tbody tr:hover {
    ============================================================ */
 @media (max-width: 575.98px) {
 
+    /* Hide fixed backdrop images that cause touch-scroll conflicts on mobile */
+    .music-backdrop,
+    .gallery-backdrop,
+    .gigs-backdrop,
+    .lineup-backdrop,
+    .contact-backdrop,
+    .technical-backdrop {
+        display: none;
+    }
+
+    /* Replace overflow-x: hidden with clip so no nested scroll container is created */
+    .music-page,
+    .gallery-page,
+    .contact-page,
+    .technical-page,
+    .gigs-hero,
+    .lineup-hero {
+        overflow-x: clip;
+    }
+
     /* Swap hero image */
     .home-backdrop-desktop {
         display: none !important;
@@ -1734,6 +1744,14 @@ tbody tr:hover {
 
     /* Contact: center everything on smartphone */
     .contact-content {
+        text-align: center;
+    }
+
+    .contact-block p {
+        text-align: center;
+    }
+
+    .backline-intro {
         text-align: center;
     }
 
