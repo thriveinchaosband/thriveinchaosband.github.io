@@ -360,7 +360,7 @@ h1:focus {
 }
 
 .home-backdrop-mobile {
-    display: none;
+    display: none !important;
 }
 
 .home-content {
@@ -1630,11 +1630,11 @@ tbody tr:hover {
 
     /* Swap hero image */
     .home-backdrop-desktop {
-        display: none;
+        display: none !important;
     }
 
     .home-backdrop-mobile {
-        display: block;
+        display: block !important;
         position: static;
         width: 100%;
         height: auto;
