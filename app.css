@@ -346,20 +346,7 @@ h1:focus {
 }
 
 .home-hero-overlay {
-    position: fixed;
-    top: var(--tic-navbar-h);
-    left: 0;
-    width: 100vw;
-    height: calc(100vh - var(--tic-navbar-h));
-    background: linear-gradient(
-        to right,
-        rgba(0, 0, 0, 0.65) 0%,
-        rgba(0, 0, 0, 0.2) 55%,
-        rgba(0, 0, 0, 0) 100%
-    );
-    z-index: 1;
-    pointer-events: none;
-    user-select: none;
+    display: none;
 }
 
 .home-backdrop-2 {
