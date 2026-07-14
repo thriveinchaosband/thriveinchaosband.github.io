@@ -13,6 +13,7 @@
     --tic-text: #f0ece4;
     --tic-muted: #666;
     --tic-navbar-h: 72px;
+    --tic-content-w: 1000px;
     --font-display: 'Barlow Condensed', 'Helvetica Neue', Helvetica, Arial, sans-serif;
     --font-body: 'Inter', 'Helvetica Neue', Helvetica, Arial, sans-serif;
     --radius-sm: 8px;
@@ -332,6 +333,10 @@ h1:focus {
     overflow: hidden;
 }
 
+.home-backdrop-picture {
+    display: contents;
+}
+
 .home-backdrop {
     position: fixed;
     top: var(--tic-navbar-h);
@@ -490,7 +495,7 @@ h1:focus {
         content: "";
         position: absolute;
         inset: 0;
-        background: url("/images/LogoJellyfish.png") center / contain no-repeat;
+        background: url("/images/LogoJellyfish.webp") center / contain no-repeat;
         opacity: 0.06;
         pointer-events: none;
         z-index: 0;
@@ -580,7 +585,7 @@ h1:focus {
     z-index: 1;
     color: var(--tic-text);
     padding: 3rem 2rem 5rem;
-    max-width: 1200px;
+    max-width: var(--tic-content-w);
     margin: 0 auto;
     animation: fadeInUp 0.4s ease both;
 }
@@ -621,7 +626,7 @@ h1:focus {
     grid-template-columns: 380px minmax(0, 1fr);
     align-items: center;
     gap: 3rem;
-    max-width: 1100px;
+    max-width: 100%;
     margin: 0 auto 3.5rem;
     padding: 2rem 2rem 2rem 2rem;
     border-radius: var(--radius-lg);
@@ -685,7 +690,8 @@ h1:focus {
     font-size: 0.97rem;
     line-height: 1.78;
     color: rgba(240, 236, 228, 0.75);
-    text-align: left;
+    text-align: justify;
+    hyphens: auto;
 }
 
 .photo-credit {
@@ -758,7 +764,7 @@ h1:focus {
     z-index: 1;
     color: var(--tic-text);
     padding: 3rem 2rem 5rem;
-    max-width: 860px;
+    max-width: var(--tic-content-w);
     margin: 0 auto;
     animation: fadeInUp 0.4s ease both;
 }
@@ -1126,7 +1132,7 @@ h1:focus {
     z-index: 1;
     color: var(--tic-text);
     padding: 3rem 2rem 5rem;
-    max-width: 1200px;
+    max-width: var(--tic-content-w);
     margin: 0 auto;
     animation: fadeInUp 0.4s ease both;
 }
@@ -1166,8 +1172,9 @@ h1:focus {
     font-size: 0.97rem;
     line-height: 1.82;
     color: rgba(240, 236, 228, 0.68);
-    max-width: 680px;
-    text-align: left;
+    max-width: 100%;
+    text-align: justify;
+    hyphens: auto;
 }
 
 .music-genres {
@@ -1365,7 +1372,7 @@ h1:focus {
     z-index: 1;
     color: var(--tic-text);
     padding: 3rem 2rem 5rem;
-    max-width: 1100px;
+    max-width: var(--tic-content-w);
     margin: 0 auto;
     animation: fadeInUp 0.4s ease both;
 }
@@ -1404,9 +1411,11 @@ h1:focus {
 .technical-intro {
     line-height: 1.78;
     margin-top: 0.5rem;
-    max-width: 800px;
+    max-width: 100%;
     color: rgba(240, 236, 228, 0.75);
     font-size: 0.95rem;
+    text-align: justify;
+    hyphens: auto;
 }
 
 .technical-content p {
