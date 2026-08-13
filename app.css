@@ -738,6 +738,239 @@ h1:focus {
 }
 
 /* ============================================================
+   PRESS PAGE
+   ============================================================ */
+.press-hero {
+    position: relative;
+    width: 100vw;
+    min-height: 100vh;
+    background: var(--tic-bg);
+    overflow: hidden;
+}
+
+.press-backdrop {
+    position: fixed;
+    inset: 0;
+    margin: auto;
+    max-width: min(900px, 90vw);
+    max-height: min(900px, 90vh);
+    opacity: 0.04;
+    pointer-events: none;
+    user-select: none;
+}
+
+.press-content {
+    position: relative;
+    z-index: 1;
+    color: var(--tic-text);
+    padding: 3rem 2rem 5rem;
+    max-width: var(--tic-content-w);
+    margin: 0 auto;
+    animation: fadeInUp 0.4s ease both;
+}
+
+.press-content h1 {
+    font-family: var(--font-display);
+    font-size: clamp(3.5rem, 9vw, 6rem);
+    font-weight: 800;
+    letter-spacing: -0.02em;
+    line-height: 0.92;
+    margin: 0 0 3rem;
+    color: #fff;
+    text-transform: uppercase;
+}
+
+.press-empty {
+    color: rgba(240, 236, 228, 0.6);
+    font-size: 0.97rem;
+}
+
+.press-entry {
+    margin: 0 0 3.5rem;
+}
+
+/* Date sits above the card, on the same divider rhythm as the lineup section labels. */
+.press-date {
+    font-family: var(--font-display);
+    font-size: 1.1rem;
+    font-weight: 700;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: rgba(255, 255, 255, 0.65);
+    margin: 0 0 0.75rem;
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+}
+
+.press-date::after {
+    content: '';
+    flex: 1;
+    height: 1px;
+    background: linear-gradient(to right, var(--tic-border-bright), transparent);
+}
+
+.press-source {
+    font-size: 0.8rem;
+    letter-spacing: 0.08em;
+    color: rgba(240, 236, 228, 0.45);
+}
+
+.press-card {
+    display: grid;
+    grid-template-columns: 380px minmax(0, 1fr);
+    align-items: center;
+    gap: 3rem;
+    max-width: 100%;
+    margin: 0 auto;
+    padding: 2rem;
+    border-radius: var(--radius-lg);
+    background: var(--tic-surface);
+    border: 1px solid var(--tic-border);
+    position: relative;
+    overflow: hidden;
+    text-decoration: none;
+    color: inherit;
+    transition: border-color 0.25s ease, transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.press-card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 1px;
+    background: linear-gradient(to right, transparent, var(--tic-border-bright), transparent);
+}
+
+.press-card::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    width: 3px;
+    background: rgba(255, 255, 255, 0.12);
+    border-radius: 0 1px 1px 0;
+    transition: background 0.25s ease;
+}
+
+.press-card:hover,
+.press-card:focus-visible {
+    border-color: var(--tic-border-bright);
+    transform: translateY(-2px);
+    box-shadow: 0 18px 46px rgba(0, 0, 0, 0.5);
+}
+
+.press-card:hover::after,
+.press-card:focus-visible::after {
+    background: rgba(255, 255, 255, 0.35);
+}
+
+.press-card-image {
+    width: 100%;
+    height: auto;
+    border-radius: var(--radius-md);
+    aspect-ratio: 16 / 10;
+    object-fit: cover;
+    box-shadow: 0 16px 48px rgba(0, 0, 0, 0.6);
+    display: block;
+}
+
+.press-card-title {
+    font-family: var(--font-display);
+    font-size: clamp(1.5rem, 3.4vw, 2.25rem);
+    font-weight: 800;
+    text-transform: uppercase;
+    letter-spacing: -0.01em;
+    margin: 0 0 1rem;
+    color: #fff;
+    line-height: 1.08;
+}
+
+.press-card-excerpt {
+    margin: 0 0 1.25rem;
+    font-size: 0.97rem;
+    line-height: 1.78;
+    font-style: italic;
+    color: rgba(240, 236, 228, 0.7);
+}
+
+.press-ellipsis {
+    opacity: 0.45;
+    font-style: normal;
+}
+
+/* The band mention pulled out of the quoted fragment. */
+.press-highlight {
+    background: rgba(255, 255, 255, 0.1);
+    color: #fff;
+    font-style: normal;
+    font-weight: 700;
+    padding: 0.05em 0.3em;
+    border-radius: 3px;
+    box-decoration-break: clone;
+    -webkit-box-decoration-break: clone;
+}
+
+.press-highlight:empty {
+    display: none;
+}
+
+.press-card-cta {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    font-size: 0.8rem;
+    font-weight: 700;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: rgba(240, 236, 228, 0.6);
+    transition: color 0.25s ease;
+}
+
+.press-card:hover .press-card-cta,
+.press-card:focus-visible .press-card-cta {
+    color: #fff;
+}
+
+@media (max-width: 900px) {
+    .press-date::before {
+        content: '';
+        flex: 1;
+        height: 1px;
+        background: linear-gradient(to left, var(--tic-border-bright), transparent);
+    }
+
+    .press-card {
+        grid-template-columns: 1fr;
+        justify-items: center;
+        gap: 1.5rem;
+        padding: 1.25rem;
+    }
+
+    .press-card::after {
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: auto;
+        width: auto;
+        height: 3px;
+        border-radius: 0 0 1px 1px;
+    }
+
+    .press-card-image {
+        width: min(520px, 90vw);
+        max-width: 100%;
+    }
+
+    .press-card-text {
+        width: 100%;
+    }
+}
+
+/* ============================================================
    GIGS PAGE
    ============================================================ */
 .gigs-hero {
@@ -1219,6 +1452,10 @@ h1:focus {
     overflow: hidden;
 }
 
+.music-page .latest-release + .latest-release {
+    margin-top: 1.5rem;
+}
+
 .latest-release::before {
     content: '';
     position: absolute;
@@ -1308,6 +1545,20 @@ h1:focus {
 .stream-btn-youtube {
     background: #FF0000;
     color: #fff;
+}
+
+/* Placeholder for a release that isn't on that platform yet — inert, not a link. */
+.stream-btn-disabled {
+    background: rgba(255, 255, 255, 0.06);
+    color: rgba(240, 236, 228, 0.55);
+    border: 1px solid var(--tic-border);
+    cursor: default;
+}
+
+.stream-btn-disabled:hover {
+    opacity: 1;
+    transform: none;
+    color: rgba(240, 236, 228, 0.55);
 }
 
 @media (max-width: 700px) {
@@ -1619,6 +1870,7 @@ tbody tr:hover {
     .gallery-backdrop,
     .gigs-backdrop,
     .lineup-backdrop,
+    .press-backdrop,
     .contact-backdrop,
     .technical-backdrop {
         display: none;
@@ -1630,7 +1882,8 @@ tbody tr:hover {
     .contact-page,
     .technical-page,
     .gigs-hero,
-    .lineup-hero {
+    .lineup-hero,
+    .press-hero {
         overflow-x: clip;
     }
 
@@ -1649,6 +1902,7 @@ tbody tr:hover {
 
     /* Smaller, centered page headings */
     .lineup-content h1,
+    .press-content h1,
     .gigs-content h1,
     .gallery-content h1,
     .contact-content h1,
@@ -1660,6 +1914,7 @@ tbody tr:hover {
 
     /* Center the section h2 dividers on mobile */
     .lineup-content h2,
+    .press-date,
     .gigs-content h2,
     .contact-content h2,
     .music-content h2,
@@ -1680,6 +1935,7 @@ tbody tr:hover {
 
     /* Reduce side padding so content fills the screen */
     .lineup-content,
+    .press-content,
     .gigs-content,
     .gallery-content,
     .contact-content,
@@ -1697,6 +1953,21 @@ tbody tr:hover {
 
     .lineup-intro-text h1 {
         text-align: center;
+    }
+
+    /* Press article cards */
+    .press-card {
+        padding: 1rem;
+        text-align: center;
+    }
+
+    .press-card-title {
+        text-align: center;
+    }
+
+    .press-card-excerpt {
+        text-align: justify;
+        hyphens: auto;
     }
 
     .lineup-intro-text p {
