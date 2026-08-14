@@ -1108,7 +1108,7 @@ h1:focus {
     position: relative;
     min-height: calc(100vh - var(--tic-navbar-h));
     background: var(--tic-bg);
-    overflow-x: hidden;
+    overflow-x: clip;
 }
 
 .gallery-backdrop {
@@ -1203,7 +1203,7 @@ h1:focus {
     position: relative;
     min-height: calc(100vh - var(--tic-navbar-h));
     background: var(--tic-bg);
-    overflow-x: hidden;
+    overflow-x: clip;
 }
 
 .contact-backdrop {
@@ -1346,7 +1346,9 @@ h1:focus {
     position: relative;
     min-height: calc(100vh - var(--tic-navbar-h));
     background: var(--tic-bg);
-    overflow-x: hidden;
+    /* clip, not hidden: hidden on one axis computes the other to auto, making this a
+       scroll container, and fadeInUp's translateY then earns it a second scrollbar. */
+    overflow-x: clip;
 }
 
 .music-backdrop {
@@ -1604,7 +1606,7 @@ h1:focus {
     position: relative;
     min-height: calc(100vh - var(--tic-navbar-h));
     background: var(--tic-bg);
-    overflow-x: hidden;
+    overflow-x: clip;
 }
 
 .technical-backdrop {
