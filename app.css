@@ -1059,6 +1059,34 @@ h1:focus {
     border-left-color: var(--tic-accent);
 }
 
+.gig-link {
+    grid-template-columns: 130px 1fr auto;
+    color: inherit;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.gig-link:hover,
+.gig-link:focus-visible {
+    color: inherit;
+}
+
+.gig-link:hover .gig-location,
+.gig-link:focus-visible .gig-location {
+    color: #fff;
+}
+
+.gig-map-icon {
+    font-size: 0.95rem;
+    opacity: 0.5;
+    transition: opacity 0.2s;
+}
+
+.gig-link:hover .gig-map-icon,
+.gig-link:focus-visible .gig-map-icon {
+    opacity: 1;
+}
+
 .gigs-list-past .gig-item {
     border-left-color: rgba(255, 255, 255, 0.1);
     opacity: 0.55;
